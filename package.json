@@ -10,7 +10,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "build": "gatsby build && cp -rp public dist",
+    "build": "npx gatsby build && cp -rp public dist",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
