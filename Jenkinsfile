@@ -4,6 +4,7 @@ pipeline {
   stages {
     stage('Build') { 
       steps {
+        sh 'npm install sharp@0.28.3 --save --registry=https://registry.npm.taobao.org'
         sh 'npm install --registry=https://registry.npm.taobao.org'
         sh 'npm run build'  
       }
